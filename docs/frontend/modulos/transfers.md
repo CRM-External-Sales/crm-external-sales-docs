@@ -1,3 +1,5 @@
+[← Regresar a Módulos](index.md){ .modulo-back }
+
 # Transfers
 
 **Ubicación:** `src/features/transfers/`  
@@ -51,11 +53,11 @@ Validación UI: `TransferViewFiltersSchema`
 | Campo | Tipo | Validación |
 |-------|------|------------|
 | `license_plate` | string | Solo letras y números, normalizada a mayúsculas (solo en alta) |
-| `make` | string | Obligatorio |
-| `model` | string | Obligatorio |
-| `category` | string | Obligatorio |
+| `make` | string | Obligatorio, marca del vehículo |
+| `model` | string | Obligatorio, modelo |
+| `category` | string | Obligatorio, categoría |
 | `capacity` | number entero | > 0 |
-| `availability` | string | Obligatorio |
+| `availability` | string | Obligatorio, disponibilidad |
 | `type` | string | `Interno` o `Externo` |
 | `base_price` | number | > 0 |
 | `sale_price` | number | **Obligatorio si `type` = Externo**; si Interno = `base_price` automático |

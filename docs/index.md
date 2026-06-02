@@ -4,9 +4,9 @@
 
 ## Descripción
 
-Bienvenido a la **documentación técnica de CRM External Sales**, sistema de gestión para venta de tours. El proyecto integra:
+Bienvenido a la **documentación técnica de CRM venta interna y externa**, sistema de gestión para venta de tours para el Hotel Río Perdido. El proyecto integra:
 
-- **Panel interno** para administradores y agentes (reservas, proveedores,transfers, reportes, usuarios).
+- **Dashboard** para administradores y agentes (reservas, proveedores,transfers, reportes, usuarios).
 - **Catálogo cliente** (`/catalogo`) para consulta de tours y flujo de reserva orientado al visitante.
 - **API REST** bajo `/api/*` (Next.js Route Handlers), autenticación con **Supabase Auth** y persistencia con **PostgreSQL** vía **Prisma**.
 
@@ -26,11 +26,6 @@ La estructura de este manual se divide de la siguiente manera:  **Backend** y **
 | i18n | i18next (catálogo cliente ES/EN) |
 | Storage | Supabase Storage (imágenes) |
 
-## Documentos en el repositorio de la aplicación
-
-| Recurso | Contenido |
-|---------|-----------|
-| [prisma/schema.prisma](https://github.com/your-org/crm-external-sales/blob/main/prisma/schema.prisma) | Modelo de datos |
 
 ## Cómo leer este manual
 

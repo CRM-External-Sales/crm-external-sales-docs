@@ -1,3 +1,5 @@
+[← Regresar a Módulos](index.md){ .modulo-back }
+
 # Autenticación
 
 **Ubicación:** `src/features/auth/`  

@@ -1,3 +1,5 @@
+[← Regresar a Módulos](index.md){ .modulo-back }
+
 # Catálogo cliente
 
 **Ubicación:** `src/features/client-home/`, `client-tour-detail/`  
@@ -5,8 +7,7 @@
 **Rol:** público o **customer**  
 **i18n:** `src/i18n/locales/{es,en}/client.json`
 
-!!! important "No crea reserva en la API"
-    El formulario de reserva del catálogo **no llama** a `POST /api/reservations`. Al enviar, abre **WhatsApp** con un mensaje prellenado (`openWhatsApp`). La reserva operativa la registra staff en `/reservas/crear`.
+**Nota:** El formulario de reserva del catálogo **no llama** a `POST /api/reservations`. Al enviar, abre **WhatsApp** con un mensaje prellenado (`openWhatsApp`). La reserva operativa la registra staff en `/reservas/crear`.
 
 ## Componentes
 
@@ -82,19 +83,6 @@ Muestra datos del tour (nombre, imágenes, horarios, precio, cupo). Navegación 
 
 Mensaje con: nombre del tour, nombre del cliente, personas, fecha (formato legible), horario, si requiere transfer (sí/no). Textos traducidos vía i18n (`reservation.waMessageIntro`, etc.).
 
----
+**Variable:** `NEXT_PUBLIC_WHATSAPP_NUMBER` (código de país + número, sin `+` ni espacios).
 
-## Marca Río Perdido
 
-- `brandLine` / `logoAria` en traducciones cliente.
-- Estilos superficie: crema `#F2F1ED` en componentes cliente (alineado con panel staff).
-
----
-
-## Contraste con reserva staff
-
-| | Catálogo | Panel `/reservas/crear` |
-|---|----------|-------------------------|
-| Autenticación | Opcional / customer | admin, agent |
-| Persistencia | WhatsApp | `POST /api/reservations` |
-| Campos | Nombre, personas, fecha, hora, transfer sí/no | Tour, hotel, IVA, descuento, transfer real, etc. |

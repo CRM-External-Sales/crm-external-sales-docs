@@ -1,3 +1,5 @@
+[← Regresar a Módulos](index.md){ .modulo-back }
+
 # Usuarios
 
 **Ubicación:** `src/features/users/`  

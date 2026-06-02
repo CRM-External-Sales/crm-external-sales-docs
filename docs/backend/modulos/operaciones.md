@@ -2,8 +2,9 @@
 
 ## Cron — sincronización de estados
 
+| Método | Ruta |
+|--------|------|
 | GET | `/api/cron/sync-reservation-states` |
-|-----|-------------------------------------|
 
 - Header: `Authorization: Bearer <CRON_SECRET>` (mín. 8 caracteres en env).
 - Alinea `state` en BD con estados de ciclo de vida (`pending`, `in_progress`, `completed`).
@@ -32,8 +33,9 @@ Solo si `NODE_ENV !== production`:
 
 ## Upload
 
-| POST | `/api/upload` |
-|------|----------------|
+| Método | Ruta | Auth |
+|--------|------|------|
+| POST | `/api/upload` | Admin |
 
 - Auth: admin.
 - `multipart` campo `file`.

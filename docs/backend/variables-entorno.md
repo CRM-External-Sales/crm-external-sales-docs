@@ -11,6 +11,7 @@ DIRECT_URL=""
 NEXT_PUBLIC_SUPABASE_URL=""
 NEXT_PUBLIC_SUPABASE_ANON_KEY=""
 SUPABASE_SERVICE_ROLE_KEY=""
+NEXT_PUBLIC_WHATSAPP_NUMBER="50688888888"
 
 NEXT_PUBLIC_API_URL="http://localhost:3000/api"
 NEXT_PUBLIC_SITE_URL="http://localhost:3000"
@@ -22,6 +23,7 @@ NEXT_PUBLIC_SITE_URL="http://localhost:3000"
 | `DIRECT_URL` | Prisma — conexión directa migraciones |
 | `NEXT_PUBLIC_SUPABASE_*` | Cliente browser + auth |
 | `SUPABASE_SERVICE_ROLE_KEY` | Operaciones admin en servidor |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | Teléfono de reservas |
 | `NEXT_PUBLIC_API_URL` | Base Axios para el cliente |
 | `NEXT_PUBLIC_SITE_URL` | Links de reset password |
 
@@ -45,5 +47,4 @@ TRANSFER_POST_SERVICE_BUFFER_HOURS=2
 CRON_SECRET="tu-secreto-largo"
 ```
 
-!!! warning "Seguridad"
-    No commitear `.env`. El repositorio ignora `.env*` en `.gitignore`.
+**Seguridad:** No commitear `.env`. El repositorio ignora `.env*` en `.gitignore`.

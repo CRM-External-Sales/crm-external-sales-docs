@@ -1,19 +1,72 @@
-# Módulos de la app
+# Módulos
 
 Cada dominio del CRM vive en `src/features/<modulo>/` y usa **React Hook Form + Zod** para validar lo que el usuario envía antes de llamar a `src/lib/api.ts` (Axios).
 
-## Resumen
+Selecciona un módulo en la **tabla de contenidos** (derecha) o en los enlaces de cada sección.
 
-| Módulo | Rutas | Rol | Schema / validación | Servicio API |
-|--------|-------|-----|---------------------|--------------|
-| [Autenticación](autenticacion.md) | `/login`, `/auth/*` | Todos (público/recuperación) | `user.schema.ts` | `authService` |
-| [Usuarios](usuarios.md) | `/usuarios/*` | **admin** | `user.schema.ts` | `userService` |
-| [Tours](tours.md) | `/tours/*` | admin, agent (crear solo admin) | `tour.schema.ts` + formularios en feature | `tourService` |
-| [Transfers](transfers.md) | `/transfers/*` | admin, agent (crear solo admin) | `transfer.schema.ts` | `transferService` |
-| [Proveedores](proveedores.md) | `/proveedores/*` | admin, agent (crear solo admin) | `supplier.schema.ts` | `supplierService` |
-| [Reservas](reservas.md) | `/reservas/*` | admin, agent | `reservation.schema.ts` | `reservationService` |
-| [Reportes](reportes.md) | `/reportes` | **admin** | `report.schema.ts` | `GET /api/reports` |
-| [Catálogo cliente](catalogo.md) | `/catalogo/*` | Público / customer | Zod en `TourReservationForm` | WhatsApp (sin POST) |
+## Autenticación {#autenticacion}
+
+[Ver documentación del módulo](autenticacion.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/login`, `/auth/*` | Todos (público/recuperación) | `user.schema.ts` | `authService` |
+
+## Usuarios {#usuarios}
+
+[Ver documentación del módulo](usuarios.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/usuarios/*` | **admin** | `user.schema.ts` | `userService` |
+
+## Tours {#tours}
+
+[Ver documentación del módulo](tours.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/tours/*` | admin, agent (crear solo admin) | `tour.schema.ts` + formularios en feature | `tourService` |
+
+## Transfers {#transfers}
+
+[Ver documentación del módulo](transfers.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/transfers/*` | admin, agent (crear solo admin) | `transfer.schema.ts` | `transferService` |
+
+## Proveedores {#proveedores}
+
+[Ver documentación del módulo](proveedores.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/proveedores/*` | admin, agent (crear solo admin) | `supplier.schema.ts` | `supplierService` |
+
+## Reservas {#reservas}
+
+[Ver documentación del módulo](reservas.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/reservas/*` | admin, agent | `reservation.schema.ts` | `reservationService` |
+
+## Reportes {#reportes}
+
+[Ver documentación del módulo](reportes.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/reportes` | **admin** | `report.schema.ts` | `GET /api/reports` |
+
+## Catálogo cliente {#catalogo}
+
+[Ver documentación del módulo](catalogo.md){ .modulo-link }
+
+| Rutas | Rol | Schema / validación | Servicio API |
+|-------|-----|---------------------|--------------|
+| `/catalogo/*` | Público / customer | Zod en `TourReservationForm` | WhatsApp (sin POST) |
 
 ## Flujo común
 

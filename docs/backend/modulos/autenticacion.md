@@ -40,9 +40,10 @@ Login usa límite estricto en producción (≈20 req / 15 min). En desarrollo: `
 
 ## Notas
 
-!!! info "Discrepancias conocidas"
-    - `ChangePasswordSchema` incluye `currentPassword` pero el handler no lo valida.
-    - `ResetPasswordSchema` exige `token` en Zod; el handler confía en la sesión Supabase del enlace.
+**Discrepancias conocidas:**
+
+- `ChangePasswordSchema` incluye `currentPassword` pero el handler no lo valida.
+- `ResetPasswordSchema` exige `token` en Zod; el handler confía en la sesión Supabase del enlace.
 
 ## Cliente
 

@@ -1,3 +1,5 @@
+[← Regresar a Módulos](index.md){ .modulo-back }
+
 # Tours
 
 **Ubicación:** `src/features/tours/`  

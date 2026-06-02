@@ -1,3 +1,5 @@
+[← Regresar a Módulos](index.md){ .modulo-back }
+
 # Proveedores
 
 **Ubicación:** `src/features/suppliers/`  
@@ -46,8 +48,8 @@
 
 | Campo | Tipo | Validación |
 |-------|------|------------|
-| `corporate` | number entero | Positivo (ID corporativo) |
-| `company` | string | 2–200 caracteres |
+| `corporate` | number entero | Cedúla Jurídica |
+| `company` | string | 2–200 caracteres, nombre de la compañia |
 | `phone` | string | 7–30 caracteres |
 | `email` | string | Email válido |
 | `service` | enum | `Tour` o `Transfer` (select obligatorio) |

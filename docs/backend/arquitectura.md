@@ -2,7 +2,7 @@
 
 ## Visión general
 
-CRM External Sales es una **aplicación monolítica full-stack** en Next.js: la interfaz React y la API REST viven en el mismo despliegue (`src/app`).
+El CRM de venta interna y externa es una **aplicación monolítica full-stack** en Next.js: la interfaz React y la API REST viven en el mismo despliegue (`src/app`).
 
 ### Diagrama de flujo
 

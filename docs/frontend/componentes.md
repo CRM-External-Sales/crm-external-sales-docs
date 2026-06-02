@@ -49,5 +49,5 @@ Comúnmente usados en los módulos:
 ## Dominio y utilidades del catálogo
 
 - `src/components/tours/TourImageCarousel.tsx`: carrusel de imágenes del tour (usado en vistas de tours).
-- `src/components/client/ClientWhatsAppFab.tsx`: botón flotante WhatsApp para contacto del catálogo.
+- `src/components/client/ClientWhatsAppFab.tsx`: botón flotante WhatsApp para contacto del catálogo (requiere `NEXT_PUBLIC_WHATSAPP_NUMBER`; ver [Variables de entorno](../backend/variables-entorno.md)).
 

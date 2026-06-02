@@ -1,6 +1,6 @@
 
-site_name: CRM External Sales
-site_description: Manual técnico del CRM de ventas internas y externas (tours, transfers, reservas).
+site_name: CRM External Sales - Hotel Río Perdido 
+site_description: Manual técnico del CRM de ventas internas y externas .
 site_author: Equipo CRM
 copyright: Copyright &copy; 2026 CRM External Sales
 
@@ -99,14 +99,18 @@ nav:
       - frontend/servicios.md
       - frontend/hooks.md
       - frontend/componentes.md
-      - frontend/modulos.md
+      - Módulos: frontend/modulos/index.md
       - frontend/panel-interno.md
 
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/mermaid-theme.js
+  - javascripts/modulos-toc.js
+
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-org/crm-external-sales
+      link: https://github.com/CRM-External-Sales/crm-external-sales.git
       name: Repositorio de la aplicación

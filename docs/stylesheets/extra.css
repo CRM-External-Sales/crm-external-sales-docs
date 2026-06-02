@@ -169,3 +169,86 @@
   color: #f2f1ed;
   opacity: 1;
 }
+
+/* —— Mermaid: un solo tono (cajas, flechas y etiquetas iguales) —— */
+[data-md-color-scheme="default"] {
+  --md-mermaid-node-bg-color: #dbd0c0;
+  --md-mermaid-node-fg-color: #1a1f1b;
+  --md-mermaid-edge-color: #8a7b6a;
+  --md-mermaid-label-bg-color: #dbd0c0;
+  --md-mermaid-label-fg-color: #1a1f1b;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-mermaid-node-bg-color: #dbd0c0;
+  --md-mermaid-node-fg-color: #1a1f1b;
+  --md-mermaid-edge-color: #8a7b6a;
+  --md-mermaid-label-bg-color: #dbd0c0;
+  --md-mermaid-label-fg-color: #1a1f1b;
+}
+
+/* —— Módulos: enlaces visitables (contenido + TOC derecho) —— */
+.md-typeset a.modulo-back {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #607536;
+  border-radius: 0.35rem;
+  background-color: transparent;
+  color: #607536 !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset a.modulo-back:hover {
+  background-color: #607536;
+  color: #f2f1ed !important;
+  text-decoration: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.modulo-back {
+  border-color: #a8c47a;
+  color: #a8c47a !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.modulo-back:hover {
+  background-color: #607536;
+  border-color: #607536;
+  color: #f2f1ed !important;
+}
+
+.md-typeset a.modulo-link {
+  display: inline-block;
+  margin: 0.25rem 0 0.75rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.35rem;
+  background-color: #607536;
+  color: #f2f1ed !important;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 1px 2px #1a1f1b33;
+}
+
+.md-typeset a.modulo-link:hover {
+  background-color: #4f622d;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.md-nav--secondary a.modulo-toc-link {
+  color: #607536 !important;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary a.modulo-toc-link {
+  color: #a8c47a !important;
+}
+
+.md-nav--secondary a.modulo-toc-link:hover {
+  color: #4f622d !important;
+  text-decoration: underline;
+}
+
+[data-md-color-scheme="slate"] .md-nav--secondary a.modulo-toc-link:hover {
+  color: #c5dba0 !important;
+}

@@ -4,7 +4,9 @@ Mismos requisitos base que el backend:
 
 - Node.js 20+
 - npm 10+
-- Variables `NEXT_PUBLIC_*` configuradas (Supabase, `API_URL`, `SITE_URL`)
+- Variables `NEXT_PUBLIC_*` configuradas (Supabase, `API_URL`, `SITE_URL`, `WHATSAPP_NUMBER`)
+
+Ver [Variables de entorno](../backend/variables-entorno.md).
 
 ## Dependencias UI principales
 
