@@ -252,3 +252,30 @@
 [data-md-color-scheme="slate"] .md-nav--secondary a.modulo-toc-link:hover {
   color: #c5dba0 !important;
 }
+
+/* —— Móvil: menú lateral sin iconos ni sub-índice por página —— */
+@media screen and (max-width: 76.1875em) {
+  /* Flecha / menú a la derecha de cada ítem */
+  .md-nav--primary .md-nav__icon {
+    display: none;
+  }
+
+  /* Secciones de la página (anclas #) dentro del drawer, no hijos del nav */
+  .md-nav--primary .md-nav__link[href*="#"] {
+    display: none;
+  }
+
+  /* Ocultar submenú cuando solo contiene anclas (TOC de esa página) */
+  .md-nav--primary
+    .md-nav__item:has(> .md-nav .md-nav__link[href*="#"]):not(
+      :has(> .md-nav .md-nav__link:not([href*="#"]))
+    )
+    > .md-nav,
+  .md-nav--primary
+    .md-nav__item:has(> .md-nav .md-nav__link[href*="#"]):not(
+      :has(> .md-nav .md-nav__link:not([href*="#"]))
+    )
+    > .md-nav__toggle {
+    display: none;
+  }
+}
