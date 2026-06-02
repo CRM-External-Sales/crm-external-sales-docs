@@ -10,6 +10,8 @@ Interfaz para **admin** y **agent**: sidebar, dashboard y CRUD operativo.
 
 ## Módulos feature
 
+Documentación resumida de módulos y datos: ver `rutas.md` + `servicios.md` + `hooks.md`.
+
 | Módulo | Rutas | Vistas |
 |--------|-------|--------|
 | Home | `/home` | `HomeRouter`, `Home/View` |
@@ -22,10 +24,9 @@ Interfaz para **admin** y **agent**: sidebar, dashboard y CRUD operativo.
 
 ## Formularios
 
-- **Zod** schemas compartidos con API (`src/app/schemas/`)
+- **Zod** en `src/app/schemas/` y schemas locales del feature
 - **React Hook Form** + `zodResolver`
-- Reservas: fecha/hora según `tour_schedule`; consulta `slot-availability` antes de `people`
-- Cancelación: diálogo con motivo y `acknowledge_late_cancellation` si aplica penalidad
+- Componentes compartidos: ver `componentes.md`
 
 ## Reportes (admin)
 
@@ -35,8 +36,14 @@ Interfaz para **admin** y **agent**: sidebar, dashboard y CRUD operativo.
 - Tabla: `ReportReservationsTable.tsx`
 - Export: `export-report.ts`, `report-pdf-chart.ts`
 
-## Componentes compartidos
+## Componentes compartidos (resumen)
 
-- `tours/TourImageCarousel.tsx`
-- `ui/pagination-controls.tsx`
-- `components/team-switcher.tsx` (si aplica multi-tenant visual)
+| Área | Componentes |
+|------|-------------|
+| Layout | `DashboardLayout`, `AppSidebar`, `AuthRouteGuard`, `RouteAccessSpinner` |
+| UI | `components/ui/*` (Table, Dialog, Calendar, Sonner…) |
+| Tours | `TourImageCarousel` |
+| Reportes | `ReportFilters`, `ReportKpis`, `ReportChart`, `ReportReservationsTable` |
+| Usuario menú | `NavUser`, `TeamSwitcher` |
+
+Detalle de componentes: ver `componentes.md`.

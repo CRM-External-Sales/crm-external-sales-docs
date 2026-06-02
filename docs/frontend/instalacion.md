@@ -1,6 +1,6 @@
-# Instalación (Frontend)
+# Instalación
 
-El frontend no se instala por separado: usa el mismo proyecto que la API.
+El proyecto no se instala por separado: usa el mismo que la API.
 
 ```bash
 npm install

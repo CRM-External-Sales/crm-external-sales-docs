@@ -1,0 +1,171 @@
+/* Río Perdido — sin blanco puro; crema #F2F1ED y tonos tierra */
+
+:root,
+[data-md-color-scheme="default"] {
+  --rp-cream: #f2f1ed;
+  --rp-cream-dark: #eae9e4;
+  --rp-cream-darker: #e2e1dc;
+  --rp-ink: #1a1f1b;
+  --rp-muted: #4a4a4a;
+  /* Café cremita (header) */
+  --rp-cafe: #c9baa5;
+  --rp-cafe-light: #dbd0c0;
+  --rp-cafe-dark: #b0a090;
+  --rp-cafe-ink: #4a4035;
+}
+
+[data-md-color-scheme="slate"] {
+  --rp-cafe: #8a7b6a;
+  --rp-cafe-light: #9d8f7e;
+  --rp-cafe-dark: #6f6254;
+}
+
+/* —— Modo claro: fondos crema —— */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--rp-cream);
+  --md-default-bg-color--light: var(--rp-cream-dark);
+  --md-default-bg-color--lighter: var(--rp-cream-darker);
+  --md-default-bg-color--lightest: #dbd9d4;
+  --md-default-fg-color: var(--rp-ink);
+  --md-default-fg-color--light: var(--rp-muted);
+  --md-default-fg-color--lighter: #6a6a6a;
+  --md-default-fg-color--lightest: #8a8a8a;
+  --md-code-bg-color: var(--rp-cream-dark);
+  --md-code-fg-color: var(--rp-ink);
+  --md-typeset-kbd-color: var(--rp-ink);
+  --md-typeset-kbd-accent-color: var(--rp-cream);
+  --md-typeset-kbd-border-color: #c9c7c2;
+}
+
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: var(--rp-cafe);
+}
+
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: var(--rp-cream-dark);
+  color: var(--rp-ink);
+}
+
+[data-md-color-scheme="default"] .md-search__input::placeholder {
+  color: var(--rp-muted);
+}
+
+[data-md-color-scheme="default"] .md-nav__link--active,
+[data-md-color-scheme="default"] .md-nav__link:focus,
+[data-md-color-scheme="default"] .md-nav__link:hover {
+  color: #607536;
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+  border-color: #c9c7c2;
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background-color: var(--rp-cream-dark);
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tr:hover {
+  background-color: var(--rp-cream-darker);
+}
+
+/* —— Modo oscuro: marrón profundo, texto crema —— */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1a1f1b;
+  --md-default-bg-color--light: #252b26;
+  --md-default-bg-color--lighter: #313833;
+  --md-default-bg-color--lightest: #3c423c;
+  --md-default-fg-color: #f2f1ed;
+  --md-default-fg-color--light: #c9c7c2;
+  --md-default-fg-color--lighter: #a8a6a1;
+  --md-default-fg-color--lightest: #8a8883;
+  --md-code-bg-color: #252b26;
+  --md-code-fg-color: #f2f1ed;
+  --md-typeset-kbd-accent-color: #313833;
+  --md-typeset-kbd-border-color: #4a4a4a;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--rp-cafe-dark);
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+  background-color: #252b26;
+  color: #f2f1ed;
+}
+
+/* —— Header y pestañas (café cremita) —— */
+[data-md-color-primary="crm"][data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--rp-cafe-ink);
+  --md-primary-fg-color--light: #4a4035b3;
+  --md-primary-fg-color--dark: #0000004d;
+  --md-primary-bg-color: var(--rp-cafe);
+  --md-primary-bg-color--light: var(--rp-cafe-light);
+  --md-primary-bg-color--dark: var(--rp-cafe-dark);
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #f2f1ed;
+  --md-primary-fg-color--light: #f2f1edb3;
+  --md-primary-fg-color--dark: #0000008a;
+  --md-primary-bg-color: var(--rp-cafe-dark);
+  --md-primary-bg-color--light: var(--rp-cafe);
+  --md-primary-bg-color--dark: #5c5045;
+}
+
+/* —— Acento oliva —— */
+[data-md-color-accent="rio"] {
+  --md-accent-fg-color: #f2f1ed;
+  --md-accent-fg-color--transparent: #f2f1ed1a;
+  --md-accent-bg-color: #607536;
+  --md-accent-bg-color--light: #647a3a;
+  --md-accent-bg-color--dark: #4f622d;
+}
+
+/* Header: no usar opacity en .md-header__topic (rompe el título animado de Material) */
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-header__button,
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-logo {
+  color: var(--rp-cafe-ink);
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-header__title .md-header__topic .md-ellipsis {
+  color: var(--rp-cafe-ink);
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-tabs__link {
+  color: var(--rp-cafe-ink);
+  opacity: 0.85;
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-tabs__link--active,
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-tabs__link:hover,
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-header__button:hover {
+  color: #3c4a22;
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-tabs__link--active,
+[data-md-color-primary="crm"][data-md-color-scheme="default"] .md-tabs__link:hover {
+  opacity: 1;
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] .md-header__button,
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] .md-logo {
+  color: #f2f1ed;
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] .md-header__title .md-header__topic .md-ellipsis {
+  color: #f2f1ed;
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] .md-tabs__link {
+  color: #f2f1ed;
+  opacity: 0.9;
+}
+
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-primary="crm"][data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #f2f1ed;
+  opacity: 1;
+}

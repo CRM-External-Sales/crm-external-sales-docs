@@ -29,6 +29,22 @@
 
 `INTERNAL_SUPPLIER_CORPORATE = 999999000000001` — tours/transfers sin proveedor externo. Afecta política de cancelación de reservas (24 h vs 48 h).
 
-## Frontend
+## Respuesta (ejemplo) — crear proveedor
+
+```json
+{
+  "success": true,
+  "data": {
+    "corporate": 3101123456,
+    "company": "Proveedor Ejemplo S.A.",
+    "phone": "8888-8888",
+    "email": "contacto@proveedor.com",
+    "service": "Tour",
+    "created_at": "2026-06-01T12:00:00.000Z"
+  }
+}
+```
+
+## Cliente
 
 `src/features/suppliers/*`, `/proveedores`, `useSuppliers`.

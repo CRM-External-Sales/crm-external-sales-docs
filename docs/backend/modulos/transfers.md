@@ -37,6 +37,26 @@ El parámetro `[id]` es la **matrícula** (`license_plate`).
 
 Ventana de ocupación: duración del tour + `TRANSFER_POST_SERVICE_BUFFER_HOURS` (default 2 h).
 
-## Frontend
+## Respuesta (ejemplo) — crear transfer
+
+```json
+{
+  "success": true,
+  "data": {
+    "license_plate": "ABC123",
+    "supplier_corporate": 999999000000001,
+    "availability": "available",
+    "make": "Toyota",
+    "model": "Hiace",
+    "category": "Van",
+    "capacity": 12,
+    "type": "Interno",
+    "base_price": 80,
+    "sale_price": 80
+  }
+}
+```
+
+## Cliente
 
 `src/features/transfers/*`, `/transfers`, `/transfers/crear`, `useTransfers`.

@@ -1,6 +1,6 @@
 # Utilidades (`src/lib/`)
 
-Módulos de dominio reutilizados por API y, en algunos casos, por el frontend.
+Módulos de dominio reutilizados por API y, en algunos casos, por el cliente.
 
 ## Autenticación y seguridad
 
@@ -38,7 +38,7 @@ Módulos de dominio reutilizados por API y, en algunos casos, por el frontend.
 | `tour-image-url.ts` | URLs de imágenes |
 | `license-plate.ts` | Normalización matrículas |
 
-## Frontend (cliente HTTP)
+## Cliente (cliente HTTP)
 
 | Archivo | Función |
 |---------|---------|

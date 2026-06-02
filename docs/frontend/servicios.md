@@ -7,7 +7,7 @@ Cliente **Axios** centralizado con interceptores para JWT y manejo de errores.
 - Base URL: `process.env.NEXT_PUBLIC_API_URL` (p. ej. `http://localhost:3000/api`).
 - Token: `localStorage` / cabecera `Authorization: Bearer …` tras login.
 
-## Servicios exportados (resumen)
+## Servicios exportados 
 
 | Servicio | Dominio |
 |----------|---------|

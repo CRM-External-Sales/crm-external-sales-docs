@@ -27,7 +27,6 @@ crm-external-sales/
 │   └── generated/prisma/    # Cliente Prisma generado
 ├── public/
 ├── mkdocs.yml
-├── ENDPOINTS_README.md      # Referencia API compacta
 └── package.json
 ```
 

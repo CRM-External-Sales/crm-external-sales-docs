@@ -35,5 +35,3 @@ Salida en `site/`.
 |------|-----------|
 | `docs/` | Páginas del manual |
 | `mkdocs.yml` | Configuración del sitio |
-| `docs/referencia/endpoints-readme.md` | Referencia tabular de la API |
-| `ENDPOINTS_README.md` | Copia en raíz (sincronizar con la app si cambia) |

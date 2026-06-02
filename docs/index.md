@@ -30,7 +30,6 @@ La estructura de este manual se divide de la siguiente manera:  **Backend** y **
 
 | Recurso | Contenido |
 |---------|-----------|
-| [Referencia API](referencia/endpoints-readme.md) | Referencia rápida de todos los endpoints (tablas) |
 | [prisma/schema.prisma](https://github.com/your-org/crm-external-sales/blob/main/prisma/schema.prisma) | Modelo de datos |
 
 ## Cómo leer este manual

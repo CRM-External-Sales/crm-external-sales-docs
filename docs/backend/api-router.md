@@ -72,5 +72,3 @@ Cada dominio está documentado en **Módulos**:
 - [Reservas](modulos/reservas.md)
 - [Reportes](modulos/reportes.md)
 - [Operaciones](modulos/operaciones.md)
-
-Referencia tabular completa: [Referencia API](../referencia/endpoints-readme.md).

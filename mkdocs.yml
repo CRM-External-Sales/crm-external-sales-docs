@@ -1,5 +1,5 @@
 
-site_name: CRM External Sales — Documentación técnica
+site_name: CRM External Sales
 site_description: Manual técnico del CRM de ventas internas y externas (tours, transfers, reservas).
 site_author: Equipo CRM
 copyright: Copyright &copy; 2026 CRM External Sales
@@ -15,15 +15,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: amber
+      primary: crm
+      accent: rio
       toggle:
         icon: material/brightness-7
         name: Modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: amber
+      primary: crm
+      accent: rio
       toggle:
         icon: material/brightness-4
         name: Modo claro
@@ -73,7 +73,6 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
-  - Referencia API: referencia/endpoints-readme.md
   - Backend:
       - backend/arquitectura.md
       - backend/estructura.md
@@ -99,8 +98,12 @@ nav:
       - frontend/rutas.md
       - frontend/servicios.md
       - frontend/hooks.md
-      - frontend/catalogo-cliente.md
+      - frontend/componentes.md
+      - frontend/modulos.md
       - frontend/panel-interno.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:

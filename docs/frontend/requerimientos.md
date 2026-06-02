@@ -1,4 +1,4 @@
-# Requerimientos (Frontend)
+# Requerimientos
 
 Mismos requisitos base que el backend:
 

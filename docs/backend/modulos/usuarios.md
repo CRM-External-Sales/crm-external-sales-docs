@@ -31,7 +31,34 @@
 | `phone` | 8 dígitos |
 | `role` | `admin` \| `agent` \| `customer` |
 
-## Frontend
+## Respuesta (ejemplo) — login (administración)
+
+Ejemplo de respuesta al autenticar (mismo shape que usa el cliente para guardar sesión):
+
+```json
+{
+  "success": true,
+  "data": {
+    "user": {
+      "id": "uuid",
+      "username": "admin1",
+      "email": "admin@ejemplo.com",
+      "phone": "88888888",
+      "role": "admin",
+      "created_at": "2026-06-01T12:00:00.000Z",
+      "updated_at": "2026-06-01T12:00:00.000Z"
+    },
+    "session": {
+      "access_token": "jwt",
+      "refresh_token": "jwt",
+      "expires_in": 3600,
+      "token_type": "bearer"
+    }
+  }
+}
+```
+
+## Cliente
 
 - `src/features/users/View.tsx`, `Create.tsx`, `Edit.tsx`
 - Rutas: `/usuarios`, `/usuarios/crear`

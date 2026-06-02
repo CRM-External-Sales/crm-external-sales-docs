@@ -22,7 +22,7 @@ NEXT_PUBLIC_SITE_URL="http://localhost:3000"
 | `DIRECT_URL` | Prisma — conexión directa migraciones |
 | `NEXT_PUBLIC_SUPABASE_*` | Cliente browser + auth |
 | `SUPABASE_SERVICE_ROLE_KEY` | Operaciones admin en servidor |
-| `NEXT_PUBLIC_API_URL` | Base Axios en frontend |
+| `NEXT_PUBLIC_API_URL` | Base Axios para el cliente |
 | `NEXT_PUBLIC_SITE_URL` | Links de reset password |
 
 ## Opcionales — reservas

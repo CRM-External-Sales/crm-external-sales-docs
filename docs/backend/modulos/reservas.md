@@ -76,6 +76,36 @@ Fuera de plazo: `acknowledge_late_cancellation: true` o error `LATE_CANCELLATION
 
 `is_within_cancellation_lead`, `is_internal_operation`, `cancellation_lead_hours`, `late_cancellation_penalty_usd`, `late_cancellation_notice`.
 
-## Frontend
+## Respuesta (ejemplo) — crear reserva
+
+```json
+{
+  "success": true,
+  "data": {
+    "reservation_id": 101,
+    "employee_user": "uuid-agente",
+    "tour_id": 1,
+    "hotel_reservation": 1203,
+    "date": "2026-06-01T00:00:00.000Z",
+    "time": "09:00",
+    "people": 2,
+    "state": "pending",
+    "note": "",
+    "tour_amount": 240,
+    "transfer_amount": 0,
+    "subtotal": 240,
+    "iva": 31.2,
+    "discount": 0,
+    "total": 271.2,
+    "transfer_id": null,
+    "is_within_cancellation_lead": true,
+    "late_cancellation_penalty_usd": 20,
+    "is_internal_operation": true,
+    "cancellation_lead_hours": 24
+  }
+}
+```
+
+## Cliente
 
 `/reservas`, `/reservas/crear`, `/reservas/[id]` — `Create.tsx`, `View.tsx`, `Detail.tsx`; hooks `useReservations`, `useReservation`.

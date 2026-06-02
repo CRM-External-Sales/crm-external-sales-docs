@@ -1,6 +1,6 @@
-# Estructura del proyecto (Frontend)
+# Estructura del proyecto  
 
-El frontend comparte repositorio con la API (Next.js App Router).
+La app comparte repositorio con la API (Next.js App Router).
 
 ```
 src/
@@ -21,8 +21,12 @@ src/
 │   └── home/
 ├── components/
 │   ├── ui/                   # shadcn (button, dialog, sidebar…)
-│   ├── layout/               # DashboardLayout, guards
-│   └── client/               # WhatsApp FAB, etc.
+│   ├── layout/               # DashboardLayout, guards, ClientShellLayout
+│   ├── i18n/                 # ClientI18nProvider, ClientLangSwitcher
+│   ├── tours/                # TourImageCarousel
+│   ├── app-sidebar.tsx       # Menú staff por rol
+│   ├── nav-main.tsx, nav-user.tsx
+│   └── client/               # ClientWhatsAppFab
 ├── hooks/
 ├── i18n/                     # locales/en, es — catálogo
 └── lib/
@@ -44,3 +48,7 @@ Cada dominio staff suele tener:
 
 - **Staff:** `DashboardLayout` + `app-sidebar` — rutas bajo `/home`, `/reservas`, etc.
 - **Catálogo:** `catalogo/layout.tsx` — shell cliente, i18n, sin sidebar admin.
+
+## Índice de componentes
+
+Ver: `componentes.md` para el listado y la clasificación de componentes (UI base, layout, navegación, i18n y componentes de dominio).

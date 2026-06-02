@@ -45,6 +45,38 @@ El filtro `estado` con valores de ciclo de vida usa el mismo **estado efectivo**
 
 `tipo_reporte`, `granularidad_temporal`, `periodo`, `kpis`, `datosGrafico`, `totalReservas`, `reservas`, `pagination`.
 
-## Frontend
+## Respuesta (ejemplo) — `tipo_reporte=reservas_estado`
+
+```json
+{
+  "success": true,
+  "data": {
+    "tipo_reporte": "reservas_estado",
+    "granularidad_temporal": null,
+    "periodo": { "fecha_inicio": "2026-06-01", "fecha_fin": "2026-06-30" },
+    "kpis": {
+      "total_reservas": 12,
+      "reservas_canceladas": 2,
+      "reservas_no_canceladas": 10,
+      "porcentaje_cancelaciones": 16.67,
+      "total_ingresos": 2100,
+      "total_descuentos": 0,
+      "total_iva": 273,
+      "promedio_reserva": 175
+    },
+    "datosGrafico": [
+      { "estado": "pending", "cantidad": 6 },
+      { "estado": "in_progress", "cantidad": 2 },
+      { "estado": "completed", "cantidad": 2 },
+      { "estado": "cancelled", "cantidad": 2 }
+    ],
+    "totalReservas": 12,
+    "reservas": [],
+    "pagination": { "page": 1, "limit": 10, "total": 12, "totalPages": 2 }
+  }
+}
+```
+
+## Cliente
 
 `src/features/reports/ReportsView.tsx`, `/reportes`, export PDF/Excel en `export-report.ts`.

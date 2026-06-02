@@ -53,6 +53,30 @@ POST acepta **array** de horarios.
 
 `POST /api/upload` (admin) — bucket `tour-images`, máx. 5 MB, JPEG/PNG/WEBP.
 
-## Frontend
+## Respuesta (ejemplo) — listado de tours
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id_tour": "1",
+      "name": "Canyon Adventure",
+      "description": "Tour de aventura por el cañón",
+      "type": "Aventura",
+      "availability": "Disponible",
+      "base_price": 120,
+      "spots": 20,
+      "requirements": "Ropa cómoda",
+      "duration": "Medio día",
+      "difficulty": "Media",
+      "supplier_corporate": 999999000000001
+    }
+  ],
+  "pagination": { "page": 1, "limit": 10, "total": 1, "totalPages": 1 }
+}
+```
+
+## Cliente
 
 `src/features/tours/*`, rutas `/tours`, `/tours/crear`, `/tours/[id]`, hook `useTours`, `useTour`.

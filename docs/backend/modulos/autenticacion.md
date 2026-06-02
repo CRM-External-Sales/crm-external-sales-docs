@@ -44,6 +44,6 @@ Login usa límite estricto en producción (≈20 req / 15 min). En desarrollo: `
     - `ChangePasswordSchema` incluye `currentPassword` pero el handler no lo valida.
     - `ResetPasswordSchema` exige `token` en Zod; el handler confía en la sesión Supabase del enlace.
 
-## Frontend
+## Cliente
 
 Vistas en `src/features/auth/`: login (`/login`), forgot, reset, change password.
