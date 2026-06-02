@@ -28,6 +28,7 @@ Salida en `site/`.
 1. Conectar este repositorio en Netlify.
 2. El archivo `netlify.toml` ya define build y carpeta de publicación.
 3. No hace falta configurar Node.js ni variables de la app CRM.
+4. Sitio ya desplegado en: https://crm-external-sales-docs.netlify.app/
 
 ## Estructura
 
